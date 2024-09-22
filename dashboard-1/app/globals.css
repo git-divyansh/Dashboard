@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+.app{
+  background: radial-gradient(circle at 45% 50%, 
+    #60346d 0%,   /* Dark violet */
+    #451a5b 18%,  /* Deep violet */
+    #270f36 50%,  /* Darker violet */
+    #000000 90%  /* Deepest violet */
+);
+
+}
+
+
+.glass {
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 7px;
+  /* border: 1px solid #84718a; */
+  opacity: 1px;
+}
+
+
+
