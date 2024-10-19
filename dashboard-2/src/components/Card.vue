@@ -1,8 +1,8 @@
 <template>
-  <div class="flex gap-6">
+  <div class="flex flex-col sm:flex-row gap-6">
     <div
       v-for="stat in stats"
-      class="flex flex-col p-4 w-1/3 bg-purple-800 rounded-lg gap-y-3"
+      class="flex flex-row justify-between sm:flex-col p-4 w-full sm:w-1/3 bg-purple-800 rounded-lg gap-y-3"
     >
       <div class="flex items-center gap-x-3">
         <div class="p-2 bg-purple-800 rounded-lg">
@@ -25,8 +25,10 @@
           <ArrowDownIcon v-else class="fill-current text-accent-orange" />
         </div>
       </div>
-      <div class="text-3xl font-semibold text-white">{{ stat.value }}</div>
-      <div class="text-sm tracking-wide text-gray-200">{{ stat.title }}</div>
+      <div>
+        <div class="text-3xl font-semibold text-white">{{ stat.value }}</div>
+        <div class="text-sm tracking-wide text-gray-200">{{ stat.title }}</div>
+      </div>
     </div>
   </div>
 </template>

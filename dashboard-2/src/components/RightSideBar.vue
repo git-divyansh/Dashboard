@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col p-6 bg-purple-800 rounded-lg gap-y-6">
+  <div class="flex flex-col p-3 md:p-6 bg-purple-800 rounded-lg gap-y-6">
     <div class="flex justify-between items-center">
       <h2 class="text-xl font-semibold leading-loose text-white">Most Ordered</h2>
       <button class="flex gap-x-2.5 py-3 px-4 rounded-lg border border-gray-200">
